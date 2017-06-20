@@ -5,6 +5,7 @@ using namespace cv;
 using namespace std;
 
 void ofApp::setup() {
+	cout << "Setup: " << arguments.size() << endl;
 	if (arguments.size() > 1) {
 		cam.setDeviceID(std::stoi(arguments[1]));
 	}
